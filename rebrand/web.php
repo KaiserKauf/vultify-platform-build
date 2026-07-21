@@ -8,6 +8,7 @@ use App\Livewire\Ares;
 use App\Livewire\Boarding\Index as BoardingIndex;
 use App\Livewire\Dashboard;
 use App\Livewire\Destination\Index as DestinationIndex;
+use App\Livewire\SystemLogs;
 use App\Livewire\Destination\Resources as DestinationResources;
 use App\Livewire\Destination\Show as DestinationShow;
 use App\Livewire\ForcePasswordReset;
@@ -113,6 +114,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('/', Dashboard::class)->name('dashboard');
     Route::get('/ares', Ares::class)->name('ares');
+    Route::get('/logs', SystemLogs::class)->name('logs');
     Route::get('/admin', AdminIndex::class)->name('admin.index');
     Route::get('/onboarding', BoardingIndex::class)->name('onboarding');
 

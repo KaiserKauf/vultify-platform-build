@@ -17,4 +17,6 @@ COPY rebrand/ares.blade.php /var/www/html/resources/views/livewire/ares.blade.ph
 COPY rebrand/AresStatus.php /var/www/html/app/Livewire/AresStatus.php
 COPY rebrand/ares-status.blade.php /var/www/html/resources/views/livewire/ares-status.blade.php
 COPY rebrand/dashboard.blade.php /var/www/html/resources/views/livewire/dashboard.blade.php
+COPY rebrand/SystemLogs.php /var/www/html/app/Livewire/SystemLogs.php
+COPY rebrand/system-logs.blade.php /var/www/html/resources/views/livewire/system-logs.blade.php
 RUN find /var/www/html/resources/views -type f -name '*.blade.php' -exec sed -i 's/| Coolify/| Vultify/g' {} +
