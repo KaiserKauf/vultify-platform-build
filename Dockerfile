@@ -21,4 +21,6 @@ COPY rebrand/SystemLogs.php /var/www/html/app/Livewire/SystemLogs.php
 COPY rebrand/system-logs.blade.php /var/www/html/resources/views/livewire/system-logs.blade.php
 COPY rebrand/OauthController.php /var/www/html/app/Http/Controllers/OauthController.php
 COPY rebrand/2026_07_22_000000_vultify_rebrand_seeded_strings.php /var/www/html/database/migrations/2026_07_22_000000_vultify_rebrand_seeded_strings.php
+COPY rebrand/TestNotification.php /var/www/html/app/Notifications/Test.php
+COPY rebrand/emails-footer.blade.php /var/www/html/resources/views/components/emails/footer.blade.php
 RUN find /var/www/html/resources/views -type f -name '*.blade.php' -exec sed -i 's/| Coolify/| Vultify/g' {} +
