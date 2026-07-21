@@ -22,6 +22,17 @@ Every push to `main` builds and pushes to
 `.github/workflows/build.yml`, using the GitHub Actions default token — no
 manual registry credentials needed.
 
+**One-time setup still needed:** the `gh` CLI token used in this session had neither
+`write:packages` nor `read:packages` scope, so pushing had to go through Actions
+(which gets its own scoped token automatically), but the resulting package is
+still private and can't yet be pulled anonymously. Making the repo public did
+NOT make the linked package public too (a known GitHub quirk — package
+visibility doesn't follow repo visibility retroactively). To finish: go to
+https://github.com/users/KaiserKauf/packages/container/vultify-platform/settings
+and set visibility to Public — after that, `docker pull` on the Coolify host
+needs no credentials at all. Until then, the host must stay `docker login`'d
+to `ghcr.io` with a token that has `read:packages`.
+
 ## Deploying a new build
 
 On the Coolify host running the `vultify-test` instance:
