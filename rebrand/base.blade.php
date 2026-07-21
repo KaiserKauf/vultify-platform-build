@@ -18,17 +18,14 @@
     <meta name="color-scheme" content="dark light" />
     <meta name="Description" content="Vultify: AI-augmented, self-hostable deployment platform" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@coolifyio" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Vultify" />
-    <meta name="twitter:description" content="An open-source & self-hostable Heroku / Netlify / Vercel alternative." />
-    <meta name="twitter:image" content="https://cdn.coollabs.io/assets/coolify/og-image.png" />
+    <meta name="twitter:description" content="AI-augmented, self-hostable deployment platform." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://coolify.io" />
+    <meta property="og:url" content="https://vultify.io" />
     <meta property="og:title" content="Vultify" />
-    <meta property="og:description" content="An open-source & self-hostable Heroku / Netlify / Vercel alternative." />
+    <meta property="og:description" content="AI-augmented, self-hostable deployment platform." />
     <meta property="og:site_name" content="Vultify" />
-    <meta property="og:image" content="https://cdn.coollabs.io/assets/coolify/og-image.png" />
     @use('App\Models\InstanceSettings')
     @php
 
