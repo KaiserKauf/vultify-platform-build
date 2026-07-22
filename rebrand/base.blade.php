@@ -72,7 +72,7 @@
 </head>
 @section('body')
 
-<body class="dark:text-inherit text-black">
+<body class="dark:text-inherit text-black" data-ares-src="resources/views/layouts/app.blade.php">
     <x-toast />
     <script data-navigate-once>
         // Global HTML sanitization function using DOMPurify
