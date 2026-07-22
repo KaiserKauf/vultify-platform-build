@@ -52,14 +52,14 @@
                                         clip-rule="evenodd" />
                                 </svg>
                                 <div>
-                                    <p class="font-bold text-warning mb-2">Email Not Configured</p>
+                                    <p class="font-bold text-warning mb-2">E-Mail nicht konfiguriert</p>
                                     <p class="text-sm dark:text-white text-black mb-2">
-                                        Transactional emails are not active on this instance.
+                                        Transaktions-E-Mails sind auf dieser Instanz nicht aktiv.
                                     </p>
                                     <p class="text-sm dark:text-white text-black">
-                                        See how to set it in our <a class="font-bold underline hover:text-coollabs"
-                                            target="_blank" href="{{ config('constants.urls.docs') }}">documentation</a>, or
-                                        learn how to manually reset your password.
+                                        Erfahre in unserer <a class="font-bold underline hover:text-coollabs"
+                                            target="_blank" href="{{ config('constants.urls.docs') }}">Dokumentation</a>, wie du
+                                        das einrichtest, oder wie du dein Passwort manuell zurücksetzt.
                                     </p>
                                 </div>
                             </div>

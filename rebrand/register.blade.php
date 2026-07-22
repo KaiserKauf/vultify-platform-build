@@ -34,9 +34,9 @@ $email = getOldOrLocal('email', 'test3@example.com');
                                         clip-rule="evenodd" />
                                 </svg>
                                 <div>
-                                    <p class="font-bold text-warning">Root User Setup</p>
-                                    <p class="text-sm dark:text-white text-black">This user will be the root user with full
-                                        admin access.</p>
+                                    <p class="font-bold text-warning">Root-Benutzer-Einrichtung</p>
+                                    <p class="text-sm dark:text-white text-black">Dieser Benutzer wird der Root-Benutzer mit
+                                        vollem Admin-Zugriff sein.</p>
                                 </div>
                             </div>
                         </div>

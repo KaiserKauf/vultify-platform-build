@@ -36,7 +36,7 @@
                     <div class="relative flex flex-1 w-full max-w-56 min-w-0">
                         <div class="absolute top-0 flex justify-center w-16 pt-5 right-full">
                             <button type="button" class="-m-2.5 p-2.5" x-on:click="open = !open">
-                                <span class="sr-only">Close sidebar</span>
+                                <span class="sr-only">Seitenleiste schließen</span>
                                 <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -57,7 +57,7 @@
                     <x-navbar />
                 </div>
                 <button type="button" @click="toggleSidebar()"
-                    :title="collapsed ? 'Expand sidebar' : 'Collapse sidebar'"
+                    :title="collapsed ? 'Seitenleiste ausklappen' : 'Seitenleiste einklappen'"
                     class="absolute top-8 -right-3 z-50 hidden lg:flex items-center justify-center w-6 h-6 rounded-full border bg-white dark:bg-coolgray-100 dark:border-coolgray-200 border-neutral-300 hover:bg-neutral-100 dark:hover:bg-coolgray-200 transition-colors shadow-sm">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-neutral-600 dark:text-neutral-300 transition-transform"
                         :class="collapsed ? '' : 'rotate-180'"
@@ -75,7 +75,7 @@
                     <livewire:switch-team />
                 </div>
                 <button type="button" class="-m-2.5 p-2.5 dark:text-warning" x-on:click="open = !open">
-                    <span class="sr-only">Open sidebar</span>
+                    <span class="sr-only">Seitenleiste öffnen</span>
                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24">
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />

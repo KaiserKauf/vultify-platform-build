@@ -167,7 +167,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m6.75 12l-3-3m0 0l-3 3m3-3v6m-1.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                             </svg>
-                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">System Logs</span>
+                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">System-Logs</span>
                         </a>
                     </li>
                     <li>
@@ -182,7 +182,7 @@
                                 <path d="M4 12l8 4l8 -4" />
                                 <path d="M4 16l8 4l8 -4" />
                             </svg>
-                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Projects</span>
+                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Projekte</span>
                         </a>
                     </li>
                     <li>
@@ -200,7 +200,7 @@
                                 <path d="M7 16v.01" />
                                 <path d="M20 15l-2 3h3l-2 3" />
                             </svg>
-                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Servers</span>
+                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Server</span>
                         </a>
                     </li>
 
@@ -212,7 +212,7 @@
                                 <path fill="currentColor"
                                     d="m6.793 1.207l.353.354l-.353-.354ZM1.207 6.793l-.353-.354l.353.354Zm0 1.414l.354-.353l-.354.353Zm5.586 5.586l-.354.353l.354-.353Zm1.414 0l-.353-.354l.353.354Zm5.586-5.586l.353.354l-.353-.354Zm0-1.414l-.354.353l.354-.353ZM8.207 1.207l.354-.353l-.354.353ZM6.44.854L.854 6.439l.707.707l5.585-5.585L6.44.854ZM.854 8.56l5.585 5.585l.707-.707l-5.585-5.585l-.707.707Zm7.707 5.585l5.585-5.585l-.707-.707l-5.585 5.585l.707.707Zm5.585-7.707L8.561.854l-.707.707l5.585 5.585l.707-.707Zm0 2.122a1.5 1.5 0 0 0 0-2.122l-.707.707a.5.5 0 0 1 0 .708l.707.707ZM6.44 14.146a1.5 1.5 0 0 0 2.122 0l-.707-.707a.5.5 0 0 1-.708 0l-.707.707ZM.854 6.44a1.5 1.5 0 0 0 0 2.122l.707-.707a.5.5 0 0 1 0-.708L.854 6.44Zm6.292-4.878a.5.5 0 0 1 .708 0L8.56.854a1.5 1.5 0 0 0-2.122 0l.707.707Zm-2 1.293l1 1l.708-.708l-1-1l-.708.708ZM7.5 5a.5.5 0 0 1-.5-.5H6A1.5 1.5 0 0 0 7.5 6V5Zm.5-.5a.5.5 0 0 1-.5.5v1A1.5 1.5 0 0 0 9 4.5H8ZM7.5 4a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 7.5 3v1Zm0-1A1.5 1.5 0 0 0 6 4.5h1a.5.5 0 0 1 .5-.5V3Zm.646 2.854l1.5 1.5l.707-.708l-1.5-1.5l-.707.708ZM10.5 8a.5.5 0 0 1-.5-.5H9A1.5 1.5 0 0 0 10.5 9V8Zm.5-.5a.5.5 0 0 1-.5.5v1A1.5 1.5 0 0 0 12 7.5h-1Zm-.5-.5a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 10.5 6v1Zm0-1A1.5 1.5 0 0 0 9 7.5h1a.5.5 0 0 1 .5-.5V6ZM7 5.5v4h1v-4H7Zm.5 5.5a.5.5 0 0 1-.5-.5H6A1.5 1.5 0 0 0 7.5 12v-1Zm.5-.5a.5.5 0 0 1-.5.5v1A1.5 1.5 0 0 0 9 10.5H8Zm-.5-.5a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 7.5 9v1Zm0-1A1.5 1.5 0 0 0 6 10.5h1a.5.5 0 0 1 .5-.5V9Z" />
                             </svg>
-                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Sources</span>
+                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Quellen</span>
                         </a>
                     </li>
                     <li>
@@ -225,7 +225,7 @@
                                     stroke-linejoin="round" stroke-width="2"
                                     d="M9 4L3 8v12l6-3l6 3l6-4V4l-6 3l-6-3zm-2 8.001V12m4 .001V12m3-2l2 2m2 2l-2-2m0 0l2-2m-2 2l-2 2" />
                             </svg>
-                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Destinations</span>
+                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Ziele</span>
                         </a>
                     </li>
                     <li>
@@ -255,7 +255,7 @@
                                     <path d="M8 16c1.5 0 3-2 4-3.5S14.5 9 16 9" />
                                 </g>
                             </svg>
-                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Shared Variables</span>
+                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Geteilte Variablen</span>
                         </a>
                     </li>
                     <li>
@@ -267,7 +267,7 @@
                                     stroke-linejoin="round" stroke-width="2"
                                     d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3H4a4 4 0 0 0 2-3v-3a7 7 0 0 1 4-6M9 17v1a3 3 0 0 0 6 0v-1" />
                             </svg>
-                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Notifications</span>
+                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Benachrichtigungen</span>
                         </a>
                     </li>
                     <li>
@@ -325,7 +325,7 @@
                                 <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                                 <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
                             </svg>
-                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Profile</span>
+                            <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Profil</span>
                         </a>
                     </li>
                     <li>
@@ -356,7 +356,7 @@
                                         stroke-linejoin="round" stroke-width="2"
                                         d="M3 8a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3zm0 2h18M7 15h.01M11 15h2" />
                                 </svg>
-                                <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Subscription</span>
+                                <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Abonnement</span>
                             </a>
                         </li>
                     @endif
@@ -374,7 +374,7 @@
                                         d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
                                     <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
                                 </svg>
-                                <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Settings</span>
+                                <span class="menu-item-label" :class="collapsed && 'lg:hidden'">Einstellungen</span>
                             </a>
                         </li>
                     @endif
@@ -411,7 +411,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
-                            <span class="menu-item-label">Theme</span>
+                            <span class="menu-item-label">Design</span>
                             <div class="ml-auto flex items-center gap-0.5 rounded-sm bg-neutral-100 p-0.5 dark:bg-coolgray-200">
                                 <button type="button" @click.stop="setTheme('light')" title="Light" aria-label="Use light theme"
                                     class="grid size-6 place-items-center rounded-sm text-xs hover:bg-white hover:text-coollabs dark:hover:bg-base dark:hover:text-warning"
@@ -516,7 +516,7 @@
                                 <path fill="currentColor"
                                     d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2a9.985 9.985 0 0 1 8 4h-2.71a8 8 0 1 0 .001 12h2.71A9.985 9.985 0 0 1 12 22m7-6v-3h-8v-2h8V8l5 4z" />
                             </svg>
-                            <span class="text-left menu-item-label" :class="collapsed && 'lg:hidden'">Logout</span>
+                            <span class="text-left menu-item-label" :class="collapsed && 'lg:hidden'">Abmelden</span>
                         </button>
                     </form>
                 </li>

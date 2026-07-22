@@ -3,8 +3,8 @@
         System Logs | Vultify
     </x-slot>
     <div class="flex items-center justify-between">
-        <h1>System Logs</h1>
-        <x-forms.button wire:click="refresh">Refresh</x-forms.button>
+        <h1>System-Logs</h1>
+        <x-forms.button wire:click="refresh">Aktualisieren</x-forms.button>
     </div>
     <div class="subtitle">Recent Laravel log output — most recent line first.</div>
 
@@ -16,7 +16,7 @@
             >{{ $file }}</button>
         @endforeach
         @if (count($files) === 0)
-            <span class="text-sm text-neutral-500">No log files found.</span>
+            <span class="text-sm text-neutral-500">Keine Log-Dateien gefunden.</span>
         @endif
     </div>
 
@@ -31,7 +31,7 @@
 @endif
 @endforeach</pre>
         @if (trim($tail) === '')
-            <span class="text-sm text-neutral-500">Empty.</span>
+            <span class="text-sm text-neutral-500">Leer.</span>
         @endif
     </div>
 </div>

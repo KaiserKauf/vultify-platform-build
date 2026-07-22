@@ -6,15 +6,15 @@
         <span x-data x-init="$wire.emit('error', '{{ session('error') }}')" />
     @endif
     <h1>Dashboard</h1>
-    <div class="subtitle">Your self-hosted infrastructure.</div>
+    <div class="subtitle">Deine selbstgehostete Infrastruktur.</div>
 
     <livewire:ares-status />
 
     <section class="-mt-2">
         <div class="flex items-center gap-2 pb-2">
-            <h3>Projects</h3>
+            <h3>Projekte</h3>
             @if ($projects->count() > 0)
-                <x-modal-input buttonTitle="Add" title="New Project">
+                <x-modal-input buttonTitle="Hinzufügen" title="New Project">
                     <x-slot:content>
                         <button
                             class="flex items-center justify-center size-4 text-black dark:text-white rounded hover:bg-coolgray-400 dark:hover:bg-coolgray-300 cursor-pointer">
@@ -55,7 +55,7 @@
                                 @can('update', $project)
                                     <a class="hover:underline" {{ wireNavigate() }}
                                         href="{{ route('project.edit', ['project_uuid' => $project->uuid]) }}">
-                                        Settings
+                                        Einstellungen
                                     </a>
                                 @endcan
                             </div>
@@ -65,12 +65,12 @@
             </div>
         @else
             <div class="flex flex-col gap-1">
-                <div class='font-bold dark:text-warning'>No projects found.</div>
+                <div class='font-bold dark:text-warning'>Keine Projekte gefunden.</div>
                 <div class="flex items-center gap-1">
-                    <x-modal-input buttonTitle="Add" title="New Project">
+                    <x-modal-input buttonTitle="Hinzufügen" title="New Project">
                         <livewire:project.add-empty />
-                    </x-modal-input> your first project or
-                    go to the <a class="underline dark:text-white" href="{{ route('onboarding') }}" {{ wireNavigate() }}>onboarding</a> page.
+                    </x-modal-input> dein erstes Projekt oder gehe zur
+                    <a class="underline dark:text-white" href="{{ route('onboarding') }}" {{ wireNavigate() }}>Onboarding</a>-Seite.
                 </div>
             </div>
         @endif
@@ -78,7 +78,7 @@
 
     <section>
         <div class="flex items-center gap-2 pb-2">
-            <h3>Servers</h3>
+            <h3>Server</h3>
             @if ($servers->count() > 0 && $privateKeys->count() > 0)
                 <x-modal-input buttonTitle="Add" title="New Server" :closeOutside="false">
                     <x-slot:content>
@@ -111,13 +111,13 @@
                                 {{ $server->description }}</div>
                             <div class="flex gap-1 text-xs text-error">
                                 @if (!$server->settings->is_reachable)
-                                    Not reachable
+                                    Nicht erreichbar
                                 @endif
                                 @if (!$server->settings->is_reachable && !$server->settings->is_usable)
                                     &
                                 @endif
                                 @if (!$server->settings->is_usable)
-                                    Not usable by Vultify
+                                    Von Vultify nicht nutzbar
                                 @endif
                             </div>
                         </div>
@@ -128,26 +128,24 @@
         @else
             @if ($privateKeys->count() === 0)
                 <div class="flex flex-col gap-1">
-                    <div class='font-bold dark:text-warning'>No private keys found.</div>
-                    <div class="flex items-center gap-1">Before you can add your server, first <x-modal-input
-                            buttonTitle="add" title="New Private Key">
+                    <div class='font-bold dark:text-warning'>Keine privaten Schlüssel gefunden.</div>
+                    <div class="flex items-center gap-1">Bevor du deinen Server hinzufügen kannst, zuerst <x-modal-input
+                            buttonTitle="hinzufügen" title="New Private Key">
                             <livewire:security.private-key.create from="server" />
-                        </x-modal-input> a private key
-                        or
-                        go to the <a class="underline dark:text-white" href="{{ route('onboarding') }}" {{ wireNavigate() }}>onboarding</a>
-                        page.
+                        </x-modal-input> einen privaten Schlüssel
+                        oder gehe zur
+                        <a class="underline dark:text-white" href="{{ route('onboarding') }}" {{ wireNavigate() }}>Onboarding</a>-Seite.
                     </div>
                 </div>
             @else
                 <div class="flex flex-col gap-1">
-                    <div class='font-bold dark:text-warning'>No servers found.</div>
+                    <div class='font-bold dark:text-warning'>Keine Server gefunden.</div>
                     <div class="flex items-center gap-1">
-                        <x-modal-input buttonTitle="Add" title="New Server" :closeOutside="false">
+                        <x-modal-input buttonTitle="Hinzufügen" title="New Server" :closeOutside="false">
                             <livewire:server.create />
-                        </x-modal-input> your first server
-                        or
-                        go to the <a class="underline dark:text-white" href="{{ route('onboarding') }}" {{ wireNavigate() }}>onboarding</a>
-                        page.
+                        </x-modal-input> deinen ersten Server
+                        oder gehe zur
+                        <a class="underline dark:text-white" href="{{ route('onboarding') }}" {{ wireNavigate() }}>Onboarding</a>-Seite.
                     </div>
                 </div>
             @endif
