@@ -1,6 +1,7 @@
 FROM docker.io/coollabsio/coolify:4.1.2
 COPY socialite.php /var/www/html/bootstrap/helpers/socialite.php
 COPY en.json /var/www/html/lang/en.json
+COPY de.json /var/www/html/lang/de.json
 COPY rebrand/login.blade.php /var/www/html/resources/views/auth/login.blade.php
 COPY rebrand/register.blade.php /var/www/html/resources/views/auth/register.blade.php
 COPY rebrand/forgot-password.blade.php /var/www/html/resources/views/auth/forgot-password.blade.php
@@ -31,3 +32,14 @@ RUN find /var/www/html/resources/views -type f -name '*.blade.php' -exec sed -i 
 # users. Confirmed every match is inside a string literal (no namespace or
 # class-name collisions) before doing a blanket replace across this directory.
 RUN find /var/www/html/app/Notifications -type f -name '*.php' -exec sed -i 's/Coolify/Vultify/g' {} +
+# German language pack: Coolify ships lang/de.json for the auth screens
+# (login/register/reset-password) only -- the rest of the dashboard has no
+# i18n coverage at all (hardcoded English strings in Blade templates), so
+# "full German UI" isn't realistically achievable without patching dozens
+# of upstream view files. This makes the part that IS translatable actually
+# used: de.json above adds the missing "Login with Ares" key and fixes a
+# leftover "coollabsio/coolify-examples" brand mention the earlier
+# Coolify->Vultify sed pass never touched (it only covered *.blade.php and
+# Notifications/*.php, not lang/*.json). config/app.php's locale is
+# hardcoded (not env-driven), so it's patched directly here.
+RUN sed -i "s/'locale' => 'en'/'locale' => 'de'/" /var/www/html/config/app.php
