@@ -24,3 +24,10 @@ COPY rebrand/2026_07_22_000000_vultify_rebrand_seeded_strings.php /var/www/html/
 COPY rebrand/TestNotification.php /var/www/html/app/Notifications/Test.php
 COPY rebrand/emails-footer.blade.php /var/www/html/resources/views/components/emails/footer.blade.php
 RUN find /var/www/html/resources/views -type f -name '*.blade.php' -exec sed -i 's/| Coolify/| Vultify/g' {} +
+# Notification subjects/bodies (deployment success/failure, restart-limit,
+# status-changed, API-token-expiring, container-restarted, ...) are plain
+# PHP string literals, not Blade templates, so the pass above never touched
+# them -- these were still emailing/Discord/Slack-posting "Coolify: ..." to
+# users. Confirmed every match is inside a string literal (no namespace or
+# class-name collisions) before doing a blanket replace across this directory.
+RUN find /var/www/html/app/Notifications -type f -name '*.php' -exec sed -i 's/Coolify/Vultify/g' {} +
