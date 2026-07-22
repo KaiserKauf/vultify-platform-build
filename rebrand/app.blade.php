@@ -91,6 +91,6 @@
              reliably; content inside {{ $slot }} lives in per-route Blade files this
              layout doesn't know, so edits to page-specific content need the source
              file set manually until per-page source mapping is built. --}}
-        <script src="https://ares.vultify.io/ares-editor.js" data-ares-api="https://ares.vultify.io" data-surface="vultify-platform"></script>
+        <script src="https://ares.vultify.io/static/ares-editor.js" data-ares-api="https://ares.vultify.io" data-surface="vultify-platform"></script>
     @endauth
 @endsection
